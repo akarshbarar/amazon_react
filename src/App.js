@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './Pages/HeaderOne/Header';
+import HeaderTwo from './Pages/HeaderTwo/HeaderTwo'
+import Body from './Pages/Body/Body'
+import Links from './Pages/Links/Links'
+import Footer from './Pages/Footer/Footer'
+// Might Need later
+import { useEffect } from 'react';
 function App() {
+
+  // Way to change title on the go 
+ useEffect(() => {
+   document.title = 'Amazon.com'
+ }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Header 1*/}
+      <Header/>
+      {/* HEADER 2 */}
+      <HeaderTwo/>
+      {/* Body */}
+      <Body/>
+      {/* Links */}
+      <Links/>
+      {/* Footer */}
+      <Footer/>
+      <h1>Hello World!</h1> 
     </div>
   );
 }

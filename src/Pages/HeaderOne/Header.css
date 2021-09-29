@@ -1,0 +1,8 @@
+.header{
+    height: 20px;
+}
+
+.headerImage{
+   object-fit: contain;
+
+}
