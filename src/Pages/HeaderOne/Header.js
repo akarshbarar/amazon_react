@@ -3,20 +3,31 @@ import './Header.css'; // To import css
 function Header() {
     return (
         <div className="header">
-            <nav>
                 {/* image */}
                 <img className="headerImage" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt= "Amzon logo"/>
-                {/* Location */}
-                <span>Deliver in </span>
                 {/* input box */}
-                <input type="text"/>
+                <div className = "headerSearch">
+                    <input  className = "headerSearchInput" type="text" placeholder="Search an Item"/>
+                    {/* Add SEARCH BUTTON */}
+                </div>
                 {/* sign in */}
-                <span>Sign in</span>
+                <div className="headerLogin">
+                    <div className="headerOption">
+                        <span>Sign In</span>
+                    </div>
+                </div>
                 {/* Return */}
-                <span> Return</span>
+                <div className="headerReturn">
+                    <div className="headerOption">
+                        <span >Return</span>
+                        <span>Orders</span>
+                    </div>
+                </div>
                 {/* cart */}
-                <span>Cart</span>
-            </nav>
+                <div className="headerCheckout">
+                    {/* Logo of Cart */}
+                    <span>0</span>
+                </div>
         </div>
     )
 }
