@@ -1,0 +1,12 @@
+.home{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.homeImage{
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.homeProducts{
+    display: flex;
+    flex-direction: column;
+}
